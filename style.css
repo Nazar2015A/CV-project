@@ -47,7 +47,7 @@ body{
 }
 
 .container{
-  padding: 20px 0 20px 40px;
+  padding: 0 0 20px 40px;
 }
 
 .photo{
@@ -63,12 +63,7 @@ body{
 .container-contacts{
   margin-top: 50px;
 }
-.container-project {
-  padding: 0 0 20px 40px;
-}
-.container-education {
-  padding: 0 0 20px 40px;
-}
+
 .contacts-symbol{
   margin-right: 15px;
   font-weight: 700;
