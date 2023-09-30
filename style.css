@@ -41,11 +41,11 @@ body{
   background-color: #36516C;
   color: #FFFFFF;
   font-family: "RocknRoll One", sans-serif !important;
-  max-width: 370px;
+  max-width: 400px;
 }
 
 .container{
-  padding: 20px 0 20px 40px;
+  padding: 20px 20px 20px 40px;
 }
 
 .photo{
