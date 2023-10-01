@@ -50,7 +50,7 @@ body{
 
 .photo{
   object-fit: contain;
-  margin: 20px 0 0 40px;
+  margin: 40px 0 0 40px;
   width: 150px;
   height: 200px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
