@@ -87,6 +87,7 @@ body{
   -webkit-column-count: 2; 
   column-count: 2;
   margin: 0;
+  display: grid;
   
 }
 .skills-item {
@@ -259,7 +260,4 @@ body{
 }
 .education-heading  {
   margin: 0 0 10px 0;
-}
-.container-SoftSkills  {
-  padding: 20px 20px 30px 40px;
 }
