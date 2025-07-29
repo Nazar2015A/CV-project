@@ -1,234 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nazarii Komar</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume - Nazarii Komar</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-  <body>
-    <div class="main">
-      <div class="wrapper-right-container">
-        <div class="bg-block">
-          <h2 class="positionWork">Front-End Developer</h2>
-          <h1 class="MyName">Nazarii Komar</h1>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f7f9fc;
+      margin: 20px;
+      color: #222;
+      line-height: 1.4;
+    }
+
+    .resume {
+      max-width: 900px;
+      background: #fff;
+      padding: 30px 40px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgb(0 0 0 / 0.1);
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: #111;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #1a73e8;
+      margin: 0;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      margin-top: 15px;
+      color: #111;
+      border-bottom: 2px solid #222;
+      padding-bottom: 2px;
+    }
+
+    .contact-info {
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      color: #555;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-weight: 500;
+    }
+
+    .contact-item {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .contact-item a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    .section {
+      display: flex;
+      gap: 24px;
+    }
+
+    .left,
+    .right {
+      flex: 1 1 400px;
+      min-width: 300px;
+    }
+
+    .job-title {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .company-location {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .date-location {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: #777;
+      margin: 0;
+    }
+
+    ul {
+      margin: 0 0 15px 20px;
+      padding: 0;
+      list-style-type: disc;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    .career-objective {
+      font-size: 0.9rem;
+      margin-top: 5px;
+      color: #333;
+      line-height: 1.3;
+    }
+
+    .edu-item {
+      margin-bottom: 15px;
+    }
+
+    .edu-degree {
+      font-weight: 600;
+      color: #1a73e8;
+    }
+
+    .edu-subtitle {
+      font-style: italic;
+      color: #777;
+      font-size: 0.9rem;
+      margin: 2px 0 5px 0;
+    }
+
+    .skills-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .skills-list li {
+      margin-bottom: 6px;
+      padding-left: 15px;
+      position: relative;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .skills-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #1a73e8;
+      font-weight: 700;
+    }
+
+    .icon-check {
+      color: green;
+      margin-right: 8px;
+      font-weight: bold;
+    }
+    .icon-cross {
+      color: red;
+      margin-right: 8px;
+      font-weight: bold;
+    }
+
+    .icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    .date-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 8px 0;
+    }
+
+    @media (max-width: 700px) {
+      .section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <article class="resume">
+    <header>
+      <h1>NAZARII KOMAR</h1>
+      <h2>Front-end React Developer</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <img src="./img/mail.png" alt="Github" class="icon" />
+          <a href="mailto:nazari.komar456@email.com">nazar.komar456@email.com</a>
         </div>
-        <div class="right-container">
-          <div class="information-container container"></div>
-
-          <div class="container-project container">
-            <h3 class="projects-heading headings">Projects</h3>
-            <ul class="list">
-              <li class="project-items">
-                <a
-                  href="https://github.com/Nazar2015A/Advanced-Todo-List"
-                  target="_blank"
-                  class="project-title"
-                  >Advanced-Todo-List</a
-                >
-
-                <span>[</span> React, TypeScript, Node.js, PostgreSQL
-                <span>]</span>
-              </li>
-
-              <li class="project-items">
-                <a
-                  href="https://github.com/Nazar2015A/Form-Builder"
-                  target="_blank"
-                  class="project-title"
-                  >Form Builder</a
-                >
-
-                <span>[</span> React, TypeScript, Node.js, MongoDB, TailwindCSS
-                <span>]</span>
-              </li>
-              <li class="project-items">
-                <a
-                  href="https://github.com/Nazar2015A/Kanban-Board"
-                  target="_blank"
-                  class="project-title"
-                  >Kanban Board</a
-                >
-
-                <span>[</span> React, TypeScript, TailwindCSS <span>]</span>
-              </li>
-
-              <li class="project-items">
-                <a
-                  href="https://github.com/Nazar2015A/Task-Manager"
-                  target="_blank"
-                  class="project-title"
-                  >Task Manager</a
-                >
-                <span>[</span> React, RTK, Node.js, MongoDB <span>]</span>
-              </li>
-
-              <li class="project-items">
-                <a
-                  href="https://github.com/Nazar2015A/food-delivery-app"
-                  target="_blank"
-                  class="project-title"
-                  >Food-delivery-app</a
-                >
-
-                <span>[</span> React, Bootstrap, CSS, Redux Toolkit
-                <span>]</span>
-              </li>
-            </ul>
-          </div>
-          <div class="container-work container">
-            <h3 class="work-heading headings">Commercial Projects</h3>
-
-            <div class="work-element">
-              <h4 class="work-header">
-                YOUQUERIST-Partnership
-                <span
-                  ><a href="https://www.youquerist.com/" target="_blank"
-                    >youquerist</a
-                  ></span
-                >
-              </h4>
-              <div class="work-description">
-                <div class="work-term">React - Node.js - MongoDB</div>
-                <p>
-                  Development of a website for the startup
-                  YOUQUERIST-Partnership. In this commercial project, I, as a
-                  developer, revamped the landing page according to the design,
-                  implemented authorization, registration, and user roles. One
-                  of the significant tasks was also optimizing the website's
-                  performance and accessibility. Initially, the site scored 40
-                  (Lighthouse testing), but I achieved a score of 80-90 by
-                  improving the overall page loading speed from 32 seconds to
-                  1-1.5 seconds.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="container-work container">
-            <h3 class="work-heading headings">Work experience</h3>
-            <div class="work-element">
-              <h4 class="work-header">
-                Front-end React Developer <span>WAF Agency</span>
-              </h4>
-              <div class="work-description">
-                <div class="work-term">React, Node.js, PostgreSQL</div>
-                <br />
-                <div class="work-term">August 2023 - Till now | Ukraine</div>
-                <p>
-                  As a Frontend Developer, I bring extensive experience in
-                  crafting web applications using React and Redux. My
-                  proficiency extends to various React libraries such as
-                  react-router-dom, TailwindCSS, MaterialUI, styled-components,
-                  react-select, swiper, and react-hook-form. I specialize in
-                  responsive design, implementing adaptive layouts based on
-                  Figma designs, and have actively developed custom components
-                  to enhance code efficiency and maintainability.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="container-education container">
-            <h3 class="education-heading headings">Education</h3>
-            <div class="education-element-wrapper">
-              <div class="education-institution">
-                West Ukrainian National University
-              </div>
-              <div class="education-specialty">Computer Science</div>
-              <div class="education-term">
-                September 2023 - Till now | Ukraine
-              </div>
-            </div>
-            <div class="education-element-wrapper">
-              <div class="education-institution">
-                Vocational College of Economics, Law and Information
-                Technologies
-              </div>
-              <div class="education-specialty">Computer Engineering</div>
-              <div class="education-term">
-                September 2019 - June 2023 | Ukraine
-              </div>
-            </div>
-          </div>
+        <div class="contact-item">
+          <img src="./img/phone.png" alt="Github" class="icon" />
+          <a href="tel:+380978475110" style="text-decoration: none; color: inherit;">
+            +380978475110
+          </a>
+        </div>
+        <div class="contact-item">
+          <img src="./img/linkedin.png" alt="Github" class="icon" />
+          <a href="https://www.linkedin.com/in/nazarii-komar-5031a6291" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <div class="contact-item">
+          <img src="./img/github.png" alt="Github" class="icon" />
+          <a href="https://github.com/Nazar2015A" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
+    </header>
 
-      <aside class="sidebar">
-        <img class="photo" src="./img/NazariiKomar.png" alt="Nazarii Komar" />
-        <div class="container-contacts container">
-          <h3 class="skills-heading heading">Contacts</h3>
+    <div class="section">
+      <section class="left">
+        <h3>WORK EXPERIENCE</h3>
 
-          <div class="contacts-wrapper">
-            <div class="contacts-symbol">
-              <img src="./img/phone.png" alt="Phone" />
-            </div>
-            <a class="contacts-item" href="tel:+380978475110">+380978475110</a>
+        <div class="job">
+          <h4 class="job-title">Front-end Developer</h4>
+          <h5><a href="https://jobs.dou.ua/companies/rely-co" target="_blank" rel="noopener noreferrer" style="color:#1a73e8; font-weight:600; text-decoration:none;">Rely-Co</a></h5>
+          <div class="date-wrapper">
+            <img src="./img/calendar.png" alt="Github" class="icon" />
+            <p class="date-location">May 2023 - current | Ukraine, Ternopil</p>
           </div>
-
-          <div class="contacts-wrapper">
-            <div class="contacts-symbol">
-              <img src="./img/email.png" alt="Email" />
-            </div>
-            <a class="contacts-item" href="mailto:nazar.komar567@gmail.com"
-              >nazar.komar567@gmail.com</a
-            >
-          </div>
-
-          <div class="contacts-wrapper">
-            <div class="contacts-symbol">
-              <i><img src="./img/linkedin.png" alt="Linkedin" /></i>
-            </div>
-            <a
-              class="contacts-item"
-              href="https://www.linkedin.com/in/nazarii-komar-5031a6291/"
-              >Linkedin</a
-            >
-          </div>
-
-          <div class="contacts-wrapper">
-            <div class="contacts-symbol">
-              <img src="./img/git.png" alt="Github" />
-            </div>
-            <a class="contacts-item" href="https://github.com/Nazar2015A"
-              >Github</a
-            >
-          </div>
-        </div>
-
-        <div class="container-TechSkills container">
-          <h3 class="techSkills-heading heading">Tech Skills</h3>
-          <ul class="skills-list">
-            <li class="skills-item">JavaScript</li>
-            <li class="skills-item">TypeScript</li>
-            <li class="skills-item">React</li>
-            <li class="skills-item">Node.js</li>
-            <li class="skills-item">Redux Toolkit</li>
-            <li class="skills-item">MongoDB</li>
-            <li class="skills-item">HTML</li>
-            <li class="skills-item">Responsive Design</li>
-            <li class="skills-item">CSS</li>
-            <li class="skills-item">PostgreSQL</li>
-            <li class="skills-item">Tailwind CSS</li>
-            <li class="skills-item">Git</li>
+          <ul>
+            <li>Developed new features and maintained existing ones for the <strong>Book of the Month</strong> application, closely collaborating with designers to ensure high-quality UI/UX</li>
+            <li>Led front-end development for <strong>Vestigas</strong>, a German logistics platform, including both customer and admin dashboards to manage declarations and employee data</li>
+            <li>Refactored legacy codebases: migrated from class-based components to functional ones, introduced full TypeScript coverage, replaced XHR requests with <code>fetch</code> + <strong>React Query</strong> for caching, and implemented code splitting</li>
+            <li>Improved test coverage across projects with <strong>unit tests</strong> and <strong>end-to-end (E2E)</strong> tests</li>
+            <li>Designed and implemented <strong>Chirpee</strong>, a survey web app built from scratch with <strong>React</strong>, <strong>Redux Toolkit</strong>, and <strong>RTK Query</strong>, fully tested and production-ready</li>
+            <li>Contributed to performance optimization and stability improvements across multiple client projects</li>
+            <li>
+              <strong>Performed code reviews</strong> to ensure <strong>code quality</strong>, maintainability, and adherence to <strong>best practices</strong>
+            </li>
+            <li>
+              <strong>Provided technical guidance</strong> and <strong>implementation suggestions</strong> to help teammates complete tasks more efficiently
+            </li>
           </ul>
         </div>
 
-        <div class="container-SoftSkills container">
-          <h3 class="softSkills-heading heading">Soft Skills</h3>
-          <ul class="skills-list">
-            <li class="skills-item">Problem-Solving</li>
-            <li class="skills-item">Self-Control</li>
-            <li class="skills-item">Adaptability</li>
-            <li class="skills-item">Attention to detail</li>
-            <li class="skills-item">Ability to Learn</li>
-            <li class="skills-item">Teamwork</li>
-            <li class="skills-item">Purposeful</li>
-            <li class="skills-item">Creativity</li>
-            <li class="skills-item">Self-managment</li>
+        <div class="job">
+          <h4 class="job-title">Front-end Developer</h4>
+          <h5 style="color: #1a73e8;">Freelance</h5>
+            <div class="date-wrapper">
+            <img src="./img/calendar.png" alt="Github" class="icon" />
+            <p class="date-location">May 2023 - current | Ukraine, Ternopil</p>
+          </div>
+          <ul>
+            <li>
+              <strong>Developed a CRM system</strong> for managing employee data: roles, filtering, CSV export
+            </li>
+            <li>
+              <strong>Built a Loom-like application</strong> with screen recording, audio capture, and shareable links
+            </li>
+            <li>
+              <strong>Optimized web applications</strong> by reducing bundle size, implementing lazy loading, and improving performance
+            </li>
+            <li>
+              <strong>Refactored codebases</strong> by migrating to TypeScript, splitting components, and enhancing architecture
+            </li>
+            <li>
+              <strong>Developed a builder-node interface</strong> with drag-and-drop logic for a foreign client project
+            </li>
           </ul>
+
         </div>
+      </section>
+
+      <aside class="right">
+        <h3>CAREER OBJECTIVE</h3>
+        <div class="career-objective">
+          React Developer with extensive expertise in building and optimizing applications using React, Next.js, and TypeScript, delivering enhanced user experiences and streamlined solutions since 2023
+        </div>
+
+        <h3>EDUCATION</h3>
+        <div class="edu-item">
+          <div class="edu-degree">Computer Science</div>
+          <div>West Ukrainian National University</div>
+            <div class="date-wrapper">
+              <img src="./img/calendar.png" alt="Github" class="icon" />
+              <p class="date-location">2023, September - current | Ukraine, Ternopil</p>
+            </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-degree">Computer Engineering</div>
+          <div>Vocational College of Economics, Law and Information Technologies</div>
+              <div class="date-wrapper">
+                <img src="./img/calendar.png" alt="Github" class="icon" />
+                <p class="date-location">2019, September - 2023, June | Ukraine, Ternopil</p>
+              </div>
+        </div>
+
+        <h3>SKILLS</h3>
+        <ul class="skills-list">
+          <li>React</li>
+          <li>Next.js</li>
+          <li>TypeScript</li>
+          <li>Git</li>
+          <li>Redux</li>
+          <li>TailwindCSS</li>
+          <li>React Query</li>
+          <li>ESLint</li>
+          <li>Prettier</li>
+          <li>Node.js</li>
+          <li>React Testing Library</li>
+          <li>Playwright</li>
+        </ul>
       </aside>
     </div>
-  </body>
+  </article>
+</body>
 </html>

@@ -42,13 +42,10 @@ body {
   padding: 20px 20px 20px 40px;
 }
 
-.photo {
-  object-fit: contain;
+.empty {
   margin: 20px 0 0 40px;
   width: 150px;
   height: 200px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .contacts-wrapper {
@@ -69,7 +66,6 @@ body {
 .contacts-symbol img {
   width: 20px;
   height: 20px;
-  color: red;
 }
 
 .skills-list {
@@ -87,10 +83,10 @@ body {
 .skills-item {
   display: flex;
   align-items: center;
+  font-weight: 500;
 }
 
 .skills-list li::before {
-  width: 6px;
   font-size: 24px;
   content: "\2022";
   color: #fb6d3a;
